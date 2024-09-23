@@ -1,19 +1,23 @@
+import onlineCourses from "../src/assets/images/about/onlinecourse.gif";
+import Certificate from "../src/assets/images/about/certificate.gif";
+import expert from "../src/assets/images/about/expert.gif";
+
 export const homeAbout = [
   {
     id: 1,
-    cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
+    cover: onlineCourses,
     title: "Online Courses",
     desc: "Far beyond the towering mountains, a restless village battles countless challenges, with knowledge as their only weapon.",
   },
   {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/diploma.png",
+    id: 2,
+    cover: Certificate,
     title: "Earn A Certificates",
     desc: "Medals of honor are bestowed only upon those heroes who have proven themselves truly worthy through courage and dedication.",
   },
   {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
+    id: 3,
+    cover: expert,
     title: "Learn with Expert",
     desc: "Guided by powerful veterans and experts, we equip you with the finest tools to conquer every challenge ahead",
   },

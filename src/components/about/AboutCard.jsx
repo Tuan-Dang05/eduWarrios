@@ -1,6 +1,7 @@
 import React from "react"
 import Heading from "../common/heading/Heading"
 import "./about.css"
+import aboutcard from "../../assets/images/about/aboutcard.gif"
 import { homeAbout } from "../../dummydata"
 import Awrapper from "./Awrapper"
 
@@ -8,9 +9,9 @@ const AboutCard = () => {
   return (
     <>
       <section className='aboutHome'>
-        <div className='container flexSB'>
+        <div className='container-fluid flexSB'>
           <div className='left row'>
-            <img src='./images/about.webp' alt='' />
+            <img src={aboutcard} alt='aboutcard gif' />
           </div>
           <div className='right row'>
             <Heading subtitle='EDU WARRIORS' title='Benefits About Online Games Learning Expertise' />

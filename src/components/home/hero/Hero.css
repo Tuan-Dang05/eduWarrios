@@ -1,16 +1,19 @@
 .hero {
-  background-image: url("../../../../public/images/bg.webp");
+  background-image: url("../../../assets/images/header/banner.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
   background-attachment: fixed;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+  height: 110vh;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-top: 20%;
   padding-right: 50px;
-  color: #fff;
+  /* color: #fff; */
 }
 .hero #heading h3 {
   color: #fff;
