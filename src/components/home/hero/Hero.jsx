@@ -1,27 +1,29 @@
 import React from "react"
-import Heading from "../../common/heading/Heading"
+import Heading from "../../common/heading/Heading";
+import download from '../../../assets/images/download.gif';
+import retro from '../../../assets/images/64.gif';
 import "./Hero.css"
 
 const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div className='container'>
-          <div className='row'>
-            <Heading subtitle='WELCOME TO ACADEMIA' title='Best Online Education Expertise' />
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <div className='container-fluid d-flex' style={{marginLeft: '60px'}}>
+          <div className='row me-5'>
+            <Heading subtitle='WELCOME TO EDU WARRIORS' title='Play and learn, master your future!' />
+            <p style={{marginLeft: '-10px'}}>Enjoy learning and continuous practice – Each day is a step towards victory, where knowledge and skills help you shine!</p>
             <div className='button'>
-              <button className='primary-btn'>
-                GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
-              </button>
-              <button>
-                VIEW COURSE <i className='fa fa-long-arrow-alt-right'></i>
+              <button className='btn_download' style={{marginLeft: '-10px'}}>
+                <span>DOWNLOAD NOW</span> <img className="ms-2" style={{marginTop: '-2px'}} width={30} src={download} alt="download" />
               </button>
             </div>
           </div>
+        <div className="retro_right" style={{float: 'right'}}>
+            <img src={retro} alt="retro" />
+        </div>
         </div>
       </section>
-      <div className='margin'></div>
+      {/* <div className='margin'></div> */}
     </>
   )
 }
