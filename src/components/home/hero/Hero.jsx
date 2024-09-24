@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div className='container-fluid d-flex' style={{ marginLeft: '60px' }}>
+        <div className=' d-flex' style={{ marginLeft: '60px' }}>
           <div className='row me-5 mobile-deivce'>
             <div className="heading">
             <p className="welcome" style={{fontWeight: '600', lineHeight: '1.5', fontSize: '40px', color: 'white'}}>WELCOME TO EDU WARRIORS </p>

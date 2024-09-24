@@ -6,7 +6,7 @@ const Head = () => {
   return (
     <>
       <section className='head ' style={{backgroundColor: '#E9F5DB'}}>
-        <div className='container-fluid' style={{ display: 'flex', alignItems: 'center', margin: '0 auto' }}>
+        <div className='container-fluid' style={{ display: 'flex' }}>
           <div className='logo' style={{ display: 'flex', alignItems: 'center', margin: '0 auto' }}>
             <img width={55} className="me-3" src={Logo} alt="logo" />
             <i>
