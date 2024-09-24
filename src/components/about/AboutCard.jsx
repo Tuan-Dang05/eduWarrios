@@ -8,13 +8,13 @@ import Awrapper from "./Awrapper"
 const AboutCard = () => {
   return (
     <>
-      <section className='aboutHome'>
-        <div className='container-fluid flexSB'>
+      <section className='aboutHome container-fluid'>
+        <div className='flexSB'>
           <div className='left row'>
             <img src={aboutcard} alt='aboutcard gif' />
           </div>
           <div className='right row'>
-            <Heading subtitle='EDU WARRIORS' title='Benefits About Online Games Learning Expertise' />
+            <Heading className='headtitle' title='Benefits About Online Games Learning Expertise' />
             <div className='items'>
               {homeAbout.map((val) => {
                 return (

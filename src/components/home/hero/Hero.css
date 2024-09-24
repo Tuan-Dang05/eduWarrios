@@ -1,18 +1,18 @@
 .hero {
-  background-image: url("../../../assets/images/header/banner.jpg");
+  background-image: url("../../../assets/images/header/banner.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
   background-attachment: fixed;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   z-index: -1;
   height: 110vh;
   width: 100%;
-  height: 100%;
-  padding-top: 20%;
-  padding-right: 50px;
+  height: 110vh;
+  padding-top: 15%;
+  /* padding-right: 10px; */
   /* color: #fff; */
 }
 .hero #heading h3 {
@@ -22,6 +22,14 @@
   text-align: left;
   margin: 0;
   padding: 0;
+}
+.btn_download{
+  background-color: #E9F5DB;
+  padding: 15px 20px;
+}
+.btn_download:active{
+  scale: 0.9;
+  animation: all 0.9s ease;
 }
 @media screen and (max-width: 768px) {
   .margin {

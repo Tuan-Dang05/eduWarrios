@@ -5,7 +5,7 @@ const Heading = ({ subtitle, title }) => {
     <>
       <div id='heading'>
         <h3>{subtitle} </h3>
-        <h1>{title} </h1>
+        <h1 style={{backgroundImage: 'linear-gradient(to right top, #0ad1c8, #00c1be, #01b1b3, #0aa1a8, #14919b)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{title} </h1>
       </div>
     </>
   )

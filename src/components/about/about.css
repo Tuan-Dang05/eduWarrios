@@ -1,7 +1,6 @@
 .aboutHome {
   height: auto;
   width: 1300px;
-  margin-left: 10%;
 }
 .aboutHome #heading {
   text-align: left;
@@ -9,8 +8,8 @@
 }
 .aboutHome .left img {
   padding-top: 25rem;
-  width: 100%;
-  height: 74%;
+  width: 40vw;
+  height: 73%;
   object-fit: cover;
 }
 .aboutHome .right {
@@ -22,6 +21,7 @@
 .aboutHome .item {
   background-color: #fff;
   margin-top: 30px;
+  width: 35vw;
   padding: 20px;
   transition: 0.5s;
 }
@@ -75,7 +75,9 @@
   font-size: 20px;
   font-weight: 500;
 }
-/*----------awrapper------------*/
+
+/*----------awrapper resposive------------*/
+
 @media screen and (max-width: 768px) {
   .aboutHome .container {
     flex-direction: column-reverse;
@@ -85,5 +87,34 @@
   }
   .awrapper {
     height: 50vh;
+  }
+}
+
+/*----------card responsive------------*/
+
+@media screen and (max-width: 1289px) {
+  .aboutHome .flexSB {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .aboutHome .right {
+    padding: 90px 50px;
+  }
+  .aboutHome .flexSB .item:first-child {
+    margin-top: 200px;
+  }
+  .aboutHome .left img {
+    width: 100%;
+    display: None;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .aboutHome .item {
+    width: 55vw;
+  }
+}
+@media screen and (max-width: 914px) {
+  .aboutHome .item {
+    width: 65vw;
   }
 }
