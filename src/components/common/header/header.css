@@ -1,8 +1,8 @@
 /*--------head------------*/
-.head {
+/* .head {
   padding: 2px 0;
   color: #fff;
-}
+} */
 .logo h1 {
   font-size: 35px;
   justify-content: center;
@@ -79,6 +79,7 @@ header ul li a {
 
 .button_btn-shine:hover {
   animation: rotate624 0.7s ease-in-out both;
+  cursor: pointer;
 }
 
 .button_btn-shine:hover span {
@@ -86,32 +87,9 @@ header ul li a {
   animation-delay: 0.06s;
 }
 
-/* DROPDOWN LANG */
-.Nav--2 {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 
 .dropdown {
   position: relative;
-}
-
-.dropdown-menu {
-  position: absolute;
-  right: 0; /* Align to the right */
-  top: 100%;
-  width: 100%;
-  margin-top: -20px;
-  background-color: white;
-  list-style: none;
-  /* padding: 10px; */
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  display: none; /* Hide by default */
-  animation: showDrop .3s ease-in-out;
 }
 
 @keyframes showDrop {
@@ -126,9 +104,9 @@ header ul li a {
 }
 
 .dropdown-menu li {
-  padding: 8px 12px;
+  padding: 5px 10px;
   cursor: pointer;
-  width: 100%;
+  width: 100%; ;
 }
 
 .dropdown-menu li:hover {
@@ -154,16 +132,96 @@ header ul li a {
 
 .dropdown.open .dropdown-menu {
   display: block; /* Show the dropdown menu when open */
+  
 }
-
+.dropdown-menu{
+  animation: showDrop .3s ease-in-out;
+}
 .toggle {
-  display: none; /* Hide toggle by default */
+  display: none; 
 }
 
-/* Responsive styling */
+
+/* Custom styles for off-canvas */
+.offcanvas-header {
+  background-color: #E9F5DB; /* Màu nền cho header */
+  color: rgb(0, 0, 0);
+  padding: 0.85rem;
+}
+
+.offcanvas-header h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.offcanvas-body .dropdown{
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 30px;
+}
+.offcanvas-body {
+  /* padding: 1.5rem; */
+}
+
+.offcanvas-body .nav-item {
+  /* margin-bottom: 1rem; */
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.offcanvas-body .nav-link {
+  font-size: 1.1rem;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.offcanvas-body .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Styling for dropdown */
+.offcanvas-body .dropdown .btn-language {
+  background-color: #f8f9fa; /* Màu nền nhạt cho nút ngôn ngữ */
+  color: #333;
+  border: 1px solid #ced4da;
+}
+
+.offcanvas-body .dropdown-menu {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+}
+
+.offcanvas-body .dropdown-item {
+  font-size: 1rem;
+}
+
+.offcanvas-body .dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.offcanvas-body .dropdown img {
+  margin-right: 5px;
+  width: 20px;
+}
+
+/* Custom styles for the close button */
+.offcanvas-header .btn-close {
+  color: white;
+  filter: brightness(150%); /* Làm sáng nút close */
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
   .toggle {
-    display: block; /* Show toggle in smaller screens */
+    display: block;
   }
 
   .mobile-nav {
@@ -296,4 +354,6 @@ header ul li a {
     background-color: #1eb2a6;
   }
 }
+
+
 

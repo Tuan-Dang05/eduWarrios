@@ -1,20 +1,23 @@
 .aboutHome {
   height: auto;
+  width: 1300px;
+  margin-left: 10%;
 }
 .aboutHome #heading {
   text-align: left;
   padding: 0;
 }
 .aboutHome .left img {
+  padding-top: 25rem;
   width: 100%;
-  height: 100%;
+  height: 74%;
   object-fit: cover;
 }
 .aboutHome .right {
-  padding: 80px 50px;
+  padding: 160px 50px;
 }
 .aboutHome .items {
-  margin-top: 50px;
+  margin-top: -150px;
 }
 .aboutHome .item {
   background-color: #fff;
@@ -37,15 +40,20 @@
   color: #999999;
 }
 .aboutHome .item:hover {
-  background-color: #1eb2a6;
+  background-color: #1791C8;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+  scale: 1.001;
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
 }
 .aboutHome .item:hover p {
   color: #fff;
 }
+
 /*----------awrapper------------*/
+
 .awrapper {
   background-image: url("../../../public/images/awrapper.webp");
   background-repeat: no-repeat;
